@@ -1,0 +1,12 @@
+logs
+yarn-debug.log*
+yarn-error.log*
+
+node_modules
+coverage
+dist
+out
+*.local
+stats.html
+components.d.ts
+auto-imports.d.ts
