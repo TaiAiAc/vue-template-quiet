@@ -1,5 +1,31 @@
 @import './common/transition.css';
 
+:root {
+  --primary-color: #316c72;
+  --dark-bg: #18181c;
+}
+
+html {
+  /* 方便unocss计算：1单位 = 0.25rem = 1px */
+  font-size: 4px;
+}
+
+body {
+  font-size: 16px;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: var(--dark-bg);
+}
+
 /*滚动条整体样式*/
 ::-webkit-scrollbar {
   width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
