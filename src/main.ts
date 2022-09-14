@@ -1,4 +1,5 @@
-import 'virtual:windi.css'
+import 'uno.css'
+// import 'virtual:windi.css'
 // 通用字体
 import './styles/index.css'
 

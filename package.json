@@ -24,6 +24,8 @@
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/jsdom": "^20.0.0",
     "@types/node": "^16.11.56",
+    "@unocss/preset-uno": "^0.45.21",
+    "@unocss/vite": "^0.45.21",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "@vue/eslint-config-prettier": "^7.0.0",
@@ -42,8 +44,6 @@
     "unplugin-vue-components": "^0.22.7",
     "vite": "^3.0.9",
     "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-windicss": "^1.8.8",
-    "vue-tsc": "^0.40.7",
-    "windicss": "^3.5.6"
+    "vue-tsc": "^0.40.7"
   }
 }
