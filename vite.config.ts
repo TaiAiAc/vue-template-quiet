@@ -8,9 +8,10 @@ export default defineConfig(configEnv => {
   const src = fileURLToPath(new URL('./src', import.meta.url))
 
   return {
-    plugins: setupVitePlugins(configEnv, root),
+    plugins: setupVitePlugins(configEnv, src),
     resolve: {
       alias: {
+        '~': root,
         '@': src
       }
     }

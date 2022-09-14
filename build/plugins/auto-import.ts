@@ -18,6 +18,7 @@ export default (srcPath: string) => {
       jsx: 'preact'
     }),
     AutoImport({
+      dts: './src/typing/auto-imports.d.ts',
       imports: [
         'vue',
         'vue-router',
@@ -28,7 +29,7 @@ export default (srcPath: string) => {
       ]
     }),
     Components({
-      dts: true,
+      dts: './src/typing/components.d.ts',
       resolvers: [
         IconsResolver({
           customCollections: ['custom'],
