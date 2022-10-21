@@ -1,7 +1,19 @@
+<script setup lang="ts">
+const router = useRouter()
+</script>
+
 <template>
   <div>layout</div>
-  <icon-custom-10k />
-  <icon-custom-10k class="text-60 text-green-400 bg-dark fill-current hover:text-blue-400 hover:text-50" />
+  <n-space>
+    <n-button size="large" type="primary" @click="router.push('/home/custom')">
+      custom
+    </n-button>
+    <n-button size="large" type="primary" @click="router.push('/home/unocss')">
+      UnoCSS
+    </n-button>
+  </n-space>
+  <div />
+  <RouterView />
 </template>
-<script setup lang="ts"></script>
+
 <style lang="scss" scoped></style>

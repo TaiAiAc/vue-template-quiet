@@ -10,33 +10,33 @@ export default (srcPath: string) => {
     Icons({
       compiler: 'vue3',
       customCollections: {
-        custom: FileSystemIconLoader(`${srcPath}/assets/svg`)
+        custom: FileSystemIconLoader(`${srcPath}/assets/svg`),
       },
       autoInstall: true,
       scale: 1,
       defaultClass: 'inline-block',
-      jsx: 'preact'
+      jsx: 'preact',
     }),
     AutoImport({
       dts: './src/typing/auto-imports.d.ts',
       imports: [
         'vue',
-        'vue-router',
         '@vueuse/core',
+        'vue-router',
         {
-          'vue-router': ['RouterView', 'RouterLink']
-        }
-      ]
+          'vue-router': ['RouterView', 'RouterLink'],
+        },
+      ],
     }),
     Components({
       dts: './src/typing/components.d.ts',
       resolvers: [
         IconsResolver({
           customCollections: ['custom'],
-          componentPrefix: 'icon'
+          componentPrefix: 'icon',
         }),
-        NaiveUiResolver()
-      ]
-    })
+        NaiveUiResolver(),
+      ],
+    }),
   ]
 }

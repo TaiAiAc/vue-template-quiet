@@ -1,0 +1,10 @@
+{
+  // 启用 Prettier。更改后需要重启 VS Code
+  "prettier.enable": false,
+  // 在保存时格式化文件。格式化程序必须可用，延迟后文件不能保存，并且编辑器不能关闭。
+  "editor.formatOnSave": false,
+  // 在保存时运行的代码操作类型。
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

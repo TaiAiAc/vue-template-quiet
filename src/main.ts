@@ -1,17 +1,17 @@
-import 'uno.css'
-// import 'virtual:windi.css'
+import 'virtual:windi.css'
 // 通用字体
 import './styles/index.css'
 
-import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import naive from 'naive-ui'
 import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
 
 app.use(createPinia()).use(router)
-app.use(naive)
+
+const meta = document.createElement('meta')
+meta.name = 'naive-ui-style'
+document.head.appendChild(meta)
 
 app.mount('#app')
